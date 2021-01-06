@@ -6,7 +6,9 @@ const Editor = (props) => {
     <article className="wrapper wrapper-left">
       <div className="header">
         <h1>Markdown input</h1>
-        <button onClick={props.clearContent} id="erase-btn">X</button>
+        <button onClick={props.clearContent} id="erase-btn">
+          CLEAR
+        </button>
       </div>
       <textarea
         type="text"

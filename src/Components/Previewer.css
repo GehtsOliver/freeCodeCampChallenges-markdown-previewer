@@ -1,4 +1,14 @@
-#preview{
+a {
+  color: rgb(180, 180, 180);
+  font-weight: bold;
+}
+
+li {
+  margin: 0.5rem;
+  margin-left: 3rem;
+}
+
+#preview {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -9,10 +19,11 @@
   background-color: #202020;
   color: white;
   row-gap: 1rem;
+  font-size: 1.1rem;
 }
 
-.header{
-  padding: .3rem 1rem;
+.header {
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,47 +32,52 @@
 }
 
 blockquote {
-    border-left: 3px solid #ffffff;
-    color: #ffffff;
-    padding-left: 5px;
-    margin-left: 25px;
-  }
-  
-  code {
-    color: #000000;
-    background: white;
-    padding: 1px 4px 2px 4px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  
-  pre {
-    background: white;
-    padding: 5px 0 5px 5px;
-  }
-  
-  h1 {
-    border-bottom: 2px solid var(--main-color);
-  }
-  
-  h2 {
-    border-bottom: 1px solid var(--main-color);
-  }
-  
-  table {
-    border-collapse: collapse;
-  }
-  
-  td,
-  th {
-    border: 2px solid var(--main-color);
-    padding: .5rem;
-    text-align: center;
-  }
-  
-  img{
-    border-radius: 50%;
-    width: 10rem;
-    margin: 0 40%;
+  border-left: 3px solid #f18b8b;
+  color: #ffffff;
+  padding-left: 5px;
+  margin-left: 25px;
+}
 
+code {
+  color: #000000;
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+
+pre {
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+
+#preview h1 {
+  text-align: center;
+  border-bottom: 2px solid var(--main-color);
+}
+
+#preview h2 {
+  text-align: center;
+  border-bottom: 1px solid var(--main-color);
+}
+
+img {
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 8rem;
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 800px) {
+  #preview {
+    justify-items: center;
+    min-width: 100%;
+    max-width: 100%;
   }
+
+  img {
+    margin: 0 35%;
+  }
+}
